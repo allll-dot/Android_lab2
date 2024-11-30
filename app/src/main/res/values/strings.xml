@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Alab2</string>
+
+    <string name="minIncrementalHint">Введите добавочную границу...</string>
 </resources>

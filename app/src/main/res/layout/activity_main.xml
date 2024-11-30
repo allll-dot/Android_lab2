@@ -8,9 +8,21 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/outputResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/inputMinIncremental"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputMinIncremental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/minIncrementalHint"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
