@@ -29,14 +29,11 @@ class MainActivity : AppCompatActivity() {
     {
         var sum = 0.0
         var denominator = 1.0
-        while (true) {
-            val nextTerm = 1.0 / (denominator * denominator)
+        var nextTerm = 1.0
+        while (nextTerm > constrain) {
+            nextTerm = 1.0 / (denominator * denominator)
             sum += nextTerm
-            if (nextTerm > constrain) {
-                denominator++
-            } else {
-                break
-            }
+            denominator++
         }
         return sum
     }
